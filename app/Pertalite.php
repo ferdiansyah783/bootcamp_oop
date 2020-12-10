@@ -8,9 +8,29 @@ namespace App;
 
  class Pertalite
  {
+    /**
+     * Prices for fuel
+     * 
+     * @var int
+     */
+
      private $price;
+
+    /**
+     * Fuel
+     * 
+     * @var string
+     */
+
      private $pertalite;
      private $pertamax;
+
+    /**
+     * Set the fuel and the price
+     * 
+     * @param
+     * @return 
+     */
 
      public function __construct()
      {
@@ -18,11 +38,23 @@ namespace App;
          $this->pertalite='pertalite';
          $this->pertamax='pertamax';
      }
+
+     /**
+      * Get the price of the fuel
+      *
+      * @return int
+      */
     
      public function getPrice()
      {
          return $this->price;
      }
+
+    /**
+     * Get the fuel
+     * 
+     * @return string
+     */
 
      public function getPertalite()
      {

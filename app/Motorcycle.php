@@ -2,16 +2,38 @@
 
 namespace App;
 use App\Pertalite;
-// require_once('Pertalite.php');
+
+/**
+ * Motorcycle
+ */
 
 class Motorcycle
 {
+    /**
+     * Motorcycle fuel
+     * 
+     * @var string.int
+     */
+
     private $fuel;
+
+    /**
+     * Take a pertalite class
+     * 
+     * @param
+     * @return
+     */
 
     public function __construct()
     {
         $this->fuel=new Pertalite();
     }
+
+    /**
+     * Get method of pertalite class
+     * 
+     * @return string.int
+     */
 
     public function fillup()
     {
